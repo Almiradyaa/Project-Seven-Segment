@@ -33,22 +33,25 @@ void displaySevenSegment(int number) {
     printf("f = %d\n", segments[number][5]);
     printf("g = %d\n", segments[number][6]);
 
-    // Tampilkan representasi biner
     printf("\nRepresentasi Biner: %s\n", binary[number]);
 
-    // Tampilkan visualisasi seven segment
     printf("\nVisualisasi Seven Segment:\n");
     //menggunakan ternary operator
+    // menampilkan visualisasi segment segment a
     printf(" %c%c%c\n", segments[number][0] ? '_' : ' ', 
            segments[number][0] ? '_' : ' ', 
            segments[number][0] ? '_' : ' ');
+     // menampilkan visualisasi segment f dan b
     printf("%c   %c\n", segments[number][5]? '|' : ' ',
            segments[number][1]? '|' : ' ');
+    // menampilkan visualisasi segment g
     printf(" %c%c%c\n", segments[number][6]? '_' : ' ', 
            segments[number][6] ? '_' : ' ', 
            segments[number][6] ? '_' : ' ');
+    // menampilkan visualisasi segment e dan c
     printf("%c   %c\n", segments[number][4]? '|' : ' ',
            segments[number][2] ? '|' : ' ');
+    //menampilkan visualisasi segment d
     printf(" %c%c%c\n", segments[number][3]? '_' : ' ', 
            segments[number][3] ? '_' : ' ', 
            segments[number][3] ? '_' : ' ');
