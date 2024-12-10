@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+    FILE *fp;
+
+    fp = fopen("COBA.TXT", "W");
+    fprintf(fp, "tes satu dua tiga");
+
+    fclose(fp);
+
+    return 0;
+}
